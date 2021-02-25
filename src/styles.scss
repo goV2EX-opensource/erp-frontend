@@ -1,0 +1,34 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+button,
+.button {
+  @apply px-4;
+  @apply py-2;
+  @apply rounded;
+
+  @apply text-white;
+  @apply bg-blue-500;
+
+  &:hover {
+    @apply bg-blue-600;
+  }
+  &:active {
+    @apply bg-blue-700;
+  }
+}
+
+.single-field {
+  @apply mb-2;
+
+  div {
+    @apply py-1;
+  }
+  input {
+    @apply py-2;
+    @apply px-1;
+    @apply border;
+    @apply rounded;
+  }
+}
